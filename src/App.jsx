@@ -93,7 +93,16 @@ const App = () => {
                 {language === 'en' ? "I'm a web developer specializing in the MERN stack, with a focus on creating user-centered applications. My background includes both frontend and backend development, allowing me to work on projects from concept to deployment. I enjoy the process of turning ideas into digital solutions that people find useful and easy to navigate." : 'Soy un desarrollador web especializado en la pila MERN, enfocado en crear aplicaciones centradas en el usuario. Tengo experiencia en frontend y backend, lo que me permite trabajar en proyectos desde el concepto hasta el despliegue. Disfruto el proceso de convertir ideas en soluciones digitales útiles y fáciles de usar.'}
               </p>
             </div>
-              <a href="" download className={styles.download}><img src="/img/download.svg" alt="download" />{language === 'en' ? 'Download CV' : 'Descargar CV'}</a>
+              <a href={
+                language === 'en'
+                  ? '/files/Pedro-Gonzalez-CV-en.pdf'
+                  : '/files/Pedro-Gonzalez-CV-es.pdf'
+              }
+              download={
+                language === 'en'
+                  ? 'Pedro-Gonzalez-CV-en.pdf' 
+                  : 'Pedro-Gonzalez-CV-es.pdf'
+              } className={styles.download}><img src="/img/download.svg" alt="download" />{language === 'en' ? 'Download CV' : 'Descargar CV'}</a>
             </div>
             </div>
         </section >
