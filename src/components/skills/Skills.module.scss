@@ -1,0 +1,76 @@
+@use '../../styles/var' as *;
+
+.section{
+  background-color: $neutral100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  padding: 4rem 1rem;
+  max-width: 960px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 500ms, opacity 500ms;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: $primaryColor600;
+    text-align: center;
+  }
+}
+
+.cont{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.grid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 90px);
+  gap: 40px;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-radius: 12px;
+  max-width: 520px;
+  box-shadow: 4px 4px 8px 0 hsla(0, 0%, 0%, 0.2);
+
+  
+  
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+
+    img{
+      width: 90px;
+    };
+  }
+}
+
+.h5{
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

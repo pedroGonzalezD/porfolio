@@ -1,0 +1,16 @@
+@use './styles/reset';
+@use './styles/var' as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body{
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+#root{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(2,23,40,1) 0%, rgba(23,48,69,1) 50%, rgba(50,74,93,1) 100%);
+  color: $neutral700;
+}

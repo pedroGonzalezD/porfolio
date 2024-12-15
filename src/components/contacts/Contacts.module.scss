@@ -1,0 +1,80 @@
+@use '../../styles/var' as *;
+
+.section{
+  background-color: $neutral100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  padding: 1rem;
+  max-width: 960px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 500ms, opacity 500ms;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: $primaryColor600;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+}
+
+.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.form{
+  border: 1px solid hsla(0, 0%, 0%, 0.1);
+  margin-top: 2rem;
+  padding: 2.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, 0.3);
+  max-width: 500px;
+  width: 100%;
+
+  label{
+    color: black;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  input, textarea{
+    background-color: $neutral200;
+    width: 100%;
+    margin-top: 0.2rem;
+    outline: 1px solid hsla(0, 0%, 0%, 0.1);
+    border-radius: 8px;
+    padding: .75rem 0.5rem;
+  }
+
+
+  textarea{
+    resize: none;
+    min-height: 100px;
+  }
+
+  button{
+    background-color: $primaryColor600;
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+
+    &:hover{
+      background-color: $primaryColor700;
+    }
+  }
+}
